@@ -14,3 +14,38 @@ V# escreve-jsB<!DOCTYPE html>
   </body>
 </html>
 .
+// aventura, fantasia, drama
+
+// a viagem de chihiro, Livre, fantasia, aventura
+// as aventuras de pi, 10, drama, fantisia, aventura
+// depois da chuva, 10, drama
+// guardiões da galáxia, 12, fantisia, aventura,
+// o menino que descobriu o vento, 14, drama
+
+let campoIdade;
+
+function setup() {
+createCanvas(400,400);
+  campoIdade = createInput("15")
+}
+
+
+function draw() { 
+  background(220);
+  let idade = campoIdade.value()
+  let recomendacao = geraRecomendacao(idade);
+  text(recomendacao, width/2, height/2);
+}
+
+function geraRecomendacao(idade){
+  if(idade >= 10) {
+    return "As aventuras de Pi";
+  } else {
+  return "A viagem de Chihiro";
+}
+}  html, body {
+  margin: 0;
+  padding: a
+}
+canvas {
+  display: block;
